@@ -1,0 +1,822 @@
+img_1.jpg,"Order-of-growth classifications We use just a few structural primitives (state-
+ments, conditionals, loops, nesting, and method calls) to implement algorithms, so very
+often the order of growth of the cost is one of just a few functions of the problem size N.
+These functions are summarized in the table on the facing page, along with the names
+that we use to refer to them, typical code that leads to each function, and examples.
+Constant. A program whose running time’s order of growth is constant executes a
+fixed number of operations to finish its job; consequently its running time does not
+depend on N. Most Java operations take constant time.
+Logarithmic. A program whose running time’s order of growth is logarithmic is barely
+slower than a constant-time program. The classic example of a program whose running
+time is logarithmic in the problem size is binary search (see BinarySearch on page 47).
+The base of the logarithm is not relevant with respect to the order of growth (since all
+logarithms with a constant base are related by a constant factor), so we use log N when
+referring to order of growth.
+Linear. Programs that spend a constant amount of time processing each piece of input
+data, or that are based on a single for loop, are quite common. The order of growth of
+such a program is said to be linear —its running time is proportional to N.
+Linearithmic. We use the term linearithmic to describe programs whose running time
+for a problem of size N has order of growth N log N. Again, the base of the logarithm
+is not relevant with respect to the order of growth. The prototypical examples of lin-
+earithmic algorithms are Merge.sort() (see Algorithm 2.4) and Quick.sort() (see
+Algorithm 2.5).
+Quadratic. A typical program whose running time has order of growth N 2 has
+two nested for loops, used for some calculation involving all pairs of N elements.
+The elementary sorting algorithms Selection.sort() (see Algorithm 2.1) and
+Insertion.sort() (see Algorithm 2.2) are prototypes of the programs in this
+classification.
+Cubic. A typical program whose running time has order of growth N 3 has three nested
+for loops, used for some calculation involving all triples of N elements. Our example
+for this section, ThreeSum, is a prototype.
+Exponential. In CHAPTER 6 (but not until then!) we will consider programs whose
+running times are proportional to 2N or higher. Generally, we use the term exponential
+to refer to algorithms whose order of growth is b N for any constant b > 1, even though
+different values of b lead to vastly different running times. Exponential algorithms are
+extremely slow—you will never run one of them to completion for a large problem.
+Still, exponential algorithms play a critical role in the theory of algorithms because"
+img_2.jpg,"Keywords: Circuit elements, Circuit components, υ-i characteristic, Resistance, Polarity, Voltage difference,
+Voltage drop, Voltage polarity, Passive reference configuration, Ohm’s law, Linear passive circuit element,
+Conductance, Siemens, mho, Short circuit, Open circuit, Ohmic conductor, Mobility of
+charge carriers, Material conductivity, Material resistivity, Electric circuit, American Wire Gauge
+(AWG), Resistor, Fixed resistors, Surface Mound Devices (SMD) (resistance value, geometry
+size), Variable resistor, Potentiometer, Resistive sensors, Photoresistor, Photocell, Negative
+temperature coefficient (NTC), Thermistor equation, Thermistor constant, Thermocouple,
+Peltier-Seebeck effect, Strain gauge, Strain sensitivity, Gauge factor, Strain gauge equation,
+Potentiometric position sensor, Nonlinear passive circuit elements, Non-ohmic circuit elements,
+Radiation resistance, Ideal diode, Shockley equation, Static resistance, Dynamic resistance,
+Small-signal resistance, Differential resistance, Incremental resistance, (DC) Operating point,
+Quiescent point, Electronic switch, Solid-state switch, Switch threshold voltage, Two-terminal
+switch, Three-terminal switch, Unidirectional switch, Bidirectional switch, Independent ideal
+voltage source, Active reference configuration, Nonlinear passive circuit elements, Non-ohmic
+circuit elements, Radiation resistance, Static resistance, Ideal diode, Shockley equation, Dynamic
+resistance, Small-signal resistance, Differential resistance, Incremental resistance, (DC) Operating
+point, Quiescent point, Electronic switch, Solid-state switch, Switch threshold voltage, Two-
+terminal switch, Three-terminal switch, Unidirectional switch, Bidirectional switch, Independent
+ideal voltage source, Active reference configuration, Practical voltage source, Maximum available
+source current, Maximum available source power, Open-circuit source voltage, Short-circuit
+circuit current, Internal source resistance, Independent ideal current source, Practical current
+source, Charge separation principle, Faraday’s law of induction, Lorentz force, Instantaneous
+generator voltage, Average generator voltage, Battery voltage, Battery capacity, Battery energy
+storage, Dependent sources, Voltage-controlled voltage source, Current-controlled voltage source,
+Voltage-controlled current source, Current-controlled current source, Open-circuit voltage gain,
+Transresistance, Transconductance, Short-circuit current gain, Voltage amplifier, Current
+amplifier, Transresistance amplifier, Transconductance amplifier, Transfer characteristic, AC
+voltage source, Ideal voltmeter, Ideal ammeter, Earth ground, Chassis ground, Common
+(neutral) terminal (ground), Forward current, Return current, Absolute voltages in a circuit"
+img_3.jpg,"5.2 DIAGONALIZABILITY
+ In Section 5.1, we presented the diagonalization problem and observed
+ that not all linear operators or matrices are diagonalizable. Although we are
+ able to diagonalize operator s and matrices and even obtain a necessary and
+ sufficient condition for diagonalizability (Theorem 5.1 p. 247) , we have not
+ yet solved the diagonaliza ti on problem. What is still needed is a simple test
+ to determine whether an operator or a matrix can be diagonalized, as well
+ as a method for actually finding a basis of eigenvectors. In this section , we
+ develop such a test and method.
+ In Example 6 of Section 5.1, we obtained a basis of eigenvectors by choos-
+ ing one eigenvector corresponding to each eigenvalue. In general , such a procedure does not yield a
+ basis, but the following theorem shows that any
+ set constructed in this manner is linearly independent."
+img_4.jpg,"Another important person in the history of probability is Abraham de Moivre,
+ who was born in France in 1667, but, as a Protestant, he did not fare very well in
+ that Catholic country. As a matter of fact, he was imprisoned for about two years
+ for his beliefs. After his release, he went to England, but led a gloomy life there, as
+ he could not find an academic position. So de Moivre supported himself by tutoring
+ or consulting with gamblers or insurance brokers. After publishing The Doctrine of
+ Chance, he turned to a project that Nicolaus Bernoulli had suggested to him. Using
+ the fact that Y is b(n, p), he discovered that the relative frequency of successes,
+ namely, Y/n, which Jacob Bernoulli had proved converged in probability to p, had
+ an interesting approximating distribution itself. De Moivre had discovered the well-
+ known bell-shaped curve called the normal distribution, and a special case of the
+ central limit theorem. Although de Moivre did not have computers in his day, we
+ show that if X is b(100, 1/2), then X/100 has the pmf displayed in Figure 5.9-3.
+ This distribution allowed de Moivre to determine a measure of spread, which we
+ now call a standard deviation. Also, he could determine the approximate probability
+ of Y/n falling into given intervals containing p. De Moivre was truly impressed with
+ the orderliness of these random relative frequencies, which he attributed to the plan
+ of the Almighty. Despite his great works, Abraham de Moivre died a bitter and
+ antisocial man, blind and in poverty, at the age of 87."
+img_5.jpg,"Description: The aim of this course will be to familiarize you with a wide array of philosophical and
+ religious traditions not only from the western world but also from eastern and indigenous traditions.
+ Given that we cannot cover even a small portion of all of the important philosophical and religious
+ developments of human history in seven weeks, the main aim of the course will be to introduce you to
+ three different approaches humans have taken in their age-old search for truth and meaning.
+
+First, we will look to religions and philosophical traditions which look to the beyond, to something which
+ transcends our immediate experience of life, in order to make sense of life and the universe. Second, we
+ will study traditions that look to the here and now for an answer to these questions; who see the meaning
+ of life as immanent within our own experience if we are willing to look deeply enough. Finally, we will
+ study those traditions that see an understanding of relationality as essential to understanding ourselves
+ and the world; who believe that is through our relationships with others, the earth, and our communities
+ in which we can find the deepest truths of what life has to offer.
+
+Our goal will be to learn to relate to these various points of view on life, the human, and the universe in
+ two ways. First, I simply want us to learn how to understand and appreciate the different positions these
+ thinkers and traditions provide. Appreciating and seeing the rationale within these different perspectives
+ will help us to understand that the way we have been conditioned to understand the world is not
+ necessarily the way the world is. We will see that there are other points of view on the world that are just
+ as, and maybe even more, reasonable than our own. Second, beyond merely understanding these
+ different philosophical perspectives, we will use them as tools to learn how to do philosophy ourselves. All
+ of us have assumptions or beliefs concerning some, if not all, of these topics. When doing philosophy we
+ want to understand what our own assumptions are and make use of these different philosophical
+ perspectives to critically evaluate these beliefs and assumptions. This is one of the main aims of
+ philosophy and of studying religion in a philosophical manner, to become aware of and evaluate our own
+ assumptions."
+img_6.jpg,"Begin a new page. Your abstract page should already include the page header
+ (described above). On the first line of the abstract page, center and bold the word
+ “Abstract” (no italics, underlining, or quotation marks).
+
+Beginning with the next line, write a concise summary of the key points of your
+ research. (Do not indent.) Your abstract should contain at least your research topic,
+ research questions, participants, methods, results, data analysis, and conclusions. You
+ may also include possible implications of your research and future work you see
+ connected with your findings. Your abstract should be a single paragraph, double-
+spaced. Your abstract should typically be no more than 250 words.
+
+You may also want to list keywords from your paper in your abstract. To do this, indent
+ as you would if you were starting a new paragraph, type Keywords: (italicized), and then
+ list your keywords. Listing your keywords will help researchers find your work in
+ databases.
+
+Abstracts are common in scholarly journal articles and are not typically required for
+ student papers unless advised by an instructor. If you are unsure whether or not your
+ work requires an abstract, consult your instructor for further guidance."
+img_7.jpg,"In recent years, the standard undergraduate curriculum in mathematics has
+been subjected to steady pressure from several different sources. As computers
+and technology become more ubiquitous, so do the areas where mathematical
+thinking can be a valuable asset. Rather than preparing themselves for graduate
+study in pure mathematics, the present majority of mathematics majors look
+forward to careers in banking, medicine, law, and numerous other fields where
+analytical skills are desirable. Another strong influence on college mathemat-
+ics is the ongoing calculus reform effort, now well over ten years old. At the
+core of this movement is the justifiable goal of presenting calculus in a more
+intuitive way, emphasizing geometric arguments over symbolic ones. Despite
+these various trends—or perhaps because of them—nearly every undergraduate
+mathematics program continues to require at least one semester of real analysis.
+The result is that instructors today are faced with the task of teaching a diffi-
+cult, abstract course to a more diverse audience less familiar with the nature of
+axiomatic arguments."
+img_8.jpg,"It is helpful to have an overall outline of the topics to be included in a proposal before you
+begin writing. Thus this chapter begins with different outlines for writing proposals; they can be
+used as models depending on whether your proposed study is qualitative, quantitative, or
+mixed methods. Then I convey several ideas about the actual writing of the proposal, such as
+developing a habit of writing, and grammar ideas that have been helpful to me in improving my
+scholarly writing. Finally, I turn to ethical issues and discuss these not as abstract ideas, but as
+considerations that need to be anticipated in all phases of the research process."
+img_9.jpg,"How would this working title be written? Try completing this sentence, “My study is about. . . .”
+A response might be, “My study is about at-risk children in the junior high,” or “My study is
+about helping college faculty become better researchers.” At this stage in the design, frame the
+answer to the question so that another scholar might easily grasp the meaning of the project. A
+common shortcoming of beginning researchers is that they frame their study in complex and
+erudite language. This perspective may result from reading published articles that have
+undergone numerous revisions before being set in print. Good, sound research projects begin
+with straightforward, uncomplicated thoughts, easy to read and to understand. Think about a
+journal article that you have read recently. If it was easy and quick to read, it was likely written
+in general language that many readers could easily identify with, in a way that was
+straightforward and simple in overall design and conceptualization."
+img_10.jpg,"The system of linear equations in the preceding example was easy to
+solve because the matrix in (2.38) has this particularly convenient form,
+which allowed us to find the particular and the general solution by in-
+spection. However, general equation systems are not of this simple form.
+Fortunately, there exists a constructive algorithmic way of transforming
+any system of linear equations into this particularly simple form: Gaussian
+elimination. Key to Gaussian elimination are elementary transformations
+of systems of linear equations, which transform the equation system into
+a simple form. Then, we can apply the three steps to the simple form that
+we just discussed in the context of the example in (2.38)."
+img_11.jpg,"Fish
+The sky darkens from ultramarine to indigo. God bless the 
+namers of oil paints and high-class women's underwear, Snowman thinks. 
+Rose-Petal Pink, Crimson Lake, Sheer Mist, Burnt Umber, Ripe 
+Plum, Indigo, Ultramarine - they're fantasies in themselves, such 
+words and phrases. It's comforting to remember that Homo sapiens 
+sapiens was once so ingenious with language, and not only with 
+language. Ingenious in every direction at once.
+Monkey brains, had been Crake's opinion. Monkey paws, 
+monkey curiosity, the desire to take apart, turn inside out, smell, 
+fondle, measure, improve, trash, discard - all hooked up to monkey 
+brains, an advanced model of monkey brains but monkey brains all 
+the same. Crake had no very high opinion of human ingenuity, 
+despite the large amount of it he himself possessed.
+
+There's a murmuring of voices from the direction of the village, 
+or from what would be a village if it had any houses. Right on 
+schedule, here come the men, carrying their torches, and behind 
+them the women."
+img_12.jpg,"Math 203 - Global optimization
+Problem 1. Let f(x, y) = x2 - 2xy + 4y2 - 4x + 24. Find the global extrema of ƒ on 
+the domain whose boundary is given by the triangle with vertices (0, 0), (4, 0), and (4,2). 
+Problem 2. The sum of the length and girth of a rectangular box cannot exceed 130 
+inches. The girth of a box is defined to be twice the sum of its width and height. Assuming 
+you want to make a box with equal width and height, find the maximum possible volume 
+of such a box under the given constraints.
+Problem 3. Find the maximum volume of a cylindrical soda can such that the sum of 
+its height and circumference is 120 centimeters."
+img_13.jpg,"Course Description
+Logic generally is the study of correct reasoning. More specifically, it studies valid arguments. Symbolic logic bypasses natural lan-
+guage arguments and treats the formalizations of these arguments as objects of study in their own right. Throughout this course, 
+we'll closely study three logics and their extensions:
+• Propositional logic: This logic formalizes declarative sentences (like ""It's raining in South 
+Hadley"" and ""if it's raining in South Hadley, then we'll all get wet""), and and treats them and their connections as the atomic elements of study.
+—It introduces the idea of a sentential connective, truth-conditional semantics (a formal way of saying whether sentences 
+in our formal language are true or false), and well-formed formulas. We'll study these, along with proof systems and some 
+meta-logical concepts such as soundness and completeness. We'll also study some extensions of classical propositional 
+logic (where there are only two truth-values for formulas, ""true"" and ""false"") where sentences can take a truth-value that 
+is neither just true nor just false.
+• Predicate logic: This logic splits the atom of the declarative sentence to reveal more internal structure.
+—It adds the expressive resource of quantifiers, expressed in natural languages by words like ""all,"" ""aucun,"" or ""sapa."" It 
+also adds the expressive resource of predicates such as ""is green"" or ""is a word in Quechua."" We'll study these new logical 
+concepts and extend the semantics we developed for propositional logic to this new formal language. We'll look at meta- 
+logical concepts such as soundness and completeness for the resulting logic, as well as proof systems for this new logic. 
+We'll also study some extensions of classical predicate logic, such as predicate logic with identity and free logic.
+• Propositional modal logic: This logic extends classical propositional logic to study formalizations of natural language concepts 
+like possibility and necessity.
+—It adds the expressive resource of so-called modal operators, which express modal concepts such as possibility and ne-
+cessity. We'll study the grammar of this new logic and its semantics, so-called ""possible world"" semantics. We'll study 
+axiomatic proof systems for this logic, as well as meta-logical results such as soundness and completeness. We'll also explore 
+applications or variants of propositional modal logic, such as deontic logic, epistemic logic, and tense logic."
+img_14.jpg,"MASSACHUSETTS
+Nondiscrimination Notice
+Blue Cross Blue Shield of Massachusetts complies with applicable federal civil 
+rights laws and does not discriminate on the basis of race, color, national origin, 
+age, disability, sex, sexual orientation, or gender identity. It does not exclude 
+people or treat them differently because of race, color, national origin, age, 
+disability, sex, sexual orientation, or gender identity.
+Blue Cross Blue Shield of Massachusetts provides:
+• Free aids and services to people with disabilities to communicate effectively 
+with us, such as qualified sign language interpreters and written information in 
+other formats (large print or other formats).
+• Free language services to people whose primary language is not English, such 
+as qualified interpreters and information written in other languages.
+If you need these services, call Member Service at the number on your ID card. 
+If you believe that Blue Cross Blue Shield of Massachusetts has failed to provide 
+these services or discriminated in another way on the basis of race, color, national 
+origin, age, disability, sex, sexual orientation, or gender identity, you can file a 
+grievance with the Civil Rights Coordinator by mail at Civil Rights Coordinator, 
+Blue Cross Blue Shield of Massachusetts, One Enterprise Drive, Quincy, MA 
+02171-2126; phone at 1-800-472-2689 (TTY: 711); fax at 1-617-246-3616; or 
+email at civilrightscoordinator@bcbsma.com.
+If you need help filing a grievance, the Civil Rights Coordinator is available to help you. 
+You can also file a civil rights complaint with the U.S. Department of Health and 
+Human Services, Office for Civil Rights, online at ocrportal.hhs.gov; by mail at 
+U.S. Department of Health and Human Services, 200 Independence Avenue, SW 
+Room 509F, HHH Building, Washington, DC 20201; by phone at 1-800-368-1019 
+or 1-800-537-7697 (TDD).
+Complaint forms are available at hhs.gov.
+Blue Cross Blue Shield of Massachusetts is an Independent Licensee of the Blue Cross and Blue Shield Association ® Registered Marks of the Blue Cross 
+and Blue Shield Association © 2016 Blue Cross and Blue Shield of Massachusetts, Inc., and Blue Cross and Blue Shield of Massachusetts HMO Blue, Inc
+164264M 55-1487 (8/16)
+1968-98752 - MECQ01"
+img_15.jpg,"Bank of America® Clarity Statement®
+BANK OF AMERICA
+Overview of Bank of America Advantage Savings key policies and fees\n Your Bank of America Advantage Savings Account
+FDIC Coverage
+This account is insured by the Federal Deposit Insurance Corporation (FDIC) and is backed by the U.S. 
+government. The standard insurance amount is $250,000 per depositor, per insured bank, for each account 
+ownership category. Refer to FDIC.gov/edie for more information.\n Monthly Maintenance Fee \n (We'll waive this fee for the first 6 months.)
+$8.00 each month\n You can avoid the Monthly Maintenance Fee when you meet ONE of the following requirements during each statement cycle:
+• Maintain a minimum daily balance of $500 or more, OR
+• Link your account to your Bank of America Advantage Relationship Banking®, Bank of America Advantage® with Tiered Interest Checking or Bank of America Advantage® Regular Checking account (first 4 savings accounts), OR
+• An owner of this account is under the age of 18, OR\n • Notify us you're a Student under age 25 enrolled in school or an educational or vocational program, OR
+• Enroll in the Preferred Rewards program. Learn more at bankofamerica.com/preferred-rewards, or visit your local financial center."
+img_16.jpg,"3. How to study what's hidden in our minds?
+- Reaction Time - Helmholtz:
++ Measured the speed of neuronal transmission
++ Studied frog nerves: reaction time to toe stimulation > thigh stimulation
+- Structuralism - Wundt & Titchener: the analysis of basic elements that constitute the mind
++ Consciousness: a person's subjective experience of the world and the mind
++ Introspection: the subjective observation of one's own experience BUT it is 22910
+• Unconscious 
+- Most cognitive processes are not conscious
+• Untestable
+• Unreliable - different subjects give different responses
+- Functionalism - James: the study of the purpose mental processes enable people to adapt to their environment → Inspired by Darwin's natural selection
++ Natural selection: the features of an organism that help it survive and reproduce are more likely to 
+be passed on to subsequent generations than other features"
+img_17.jpg,"10                                                                                Planting Sweetgrass
+to the earth. Plants know how to make food and medicine from light
+and water, and then they give it away.
+I like to imagine that when Skywoman scattered her handful of 
+seeds across Turtle Island, she was sowing sustenance for the body and 
+also for the mind, emotion, and spirit: she was leaving us teachers. The 
+plants can tell us her story; we need to learn to listen."
+img_18.jpg,"As the temperature drops, single voices-clear and hollow-replace 
+the keening chorus: the ancient speech of frogs. One word becomes 
+clear, as if spoken in English. ""Hear! Hear! Hear! The world is more 
+than your thoughtless commute. We, the collateral, are your wealth, 
+your teachers, your security, your family. Your strange hunger for ease 
+should not mean a death sentence for the rest of Creation.""
+""Hear!"" calls a peeper in the headlights.
+""Hear!"" calls a young man trapped in a tank far from home. 
+""Hear!"" calls a mother whose home is now a burnt-out ruin.
+There must be an end to this.
+By the time I get home it is late and I cannot sleep, so I walk 
+hill to the pond behind my house. Here too the air is ringing with their 
+calls. I want to light a sweetgrass smudge, to wash away the sadness in 
+a cloud of smoke. But the fog is too heavy and the matches just bleed 
+a red streak on the box. As it should be. There should be no washing 
+away tonight; better to wear the grief like a sodden coat.
+""Weep! Weep!"" calls a toad from the water's edge. And I do. If 
+grief can be a doorway to love, then let us all weep for the world we are 
+breaking apart so we can love it back to wholeness again."
+img_19.jpg,"Trevor had passed away the night before. I'm broken in two, the 
+message said. In two, it was the only thought I could keep, sitting 
+in my seat, how losing a person could make more of us, the living,
+make us two.
+I picked up my bag and left the class. The professor, discussing 
+a passage from Pietro di Donato's Christ in Concrete, stopped, 
+looked at me, waiting for an explanation. When I gave none she 
+continued, her voice trailing behind me as I fled the building. I 
+walked all the way uptown, along the East Side, following the 6 
+train up to Grand Central.
+Into-yes, that's more like it. As in, Now I'm broken into."
+img_20.jpg,"1. Two-factor theory of intelligence (Spearman): Every cognitive task requires a combination of 
+general ability (g) and skills that are specific to the task (s)
+2. Primary mental abilities (Thurstone): intelligence is a combination of 7 mental abilities
+3. The 3-level hierarchy (Carroll): 3 levels of stratum (level of specificity increases as we go down 
+the hierarchy)
+- Fluid intelligence:
++ 'Think on your feet' to solve problems
++ Associated with youth
++ You can adapt quickly 
+- Crystalized intelligence:
++ The ability to use language, skills and experience
++ Increases with age
++ You rely on stored knowledge"
+img_21.jpg,"- Humans are a highly social species, like ants
+- People have a high need to belong to their groups (an aspect of survival)
+- Social support strength is a predictor of physical healthst
+- History:
++ Methods were devised to explain social behaviorf brus enigmat
++ Ensuring ecologically valid (how well the lab environment extends to the world) studies make special 
+demands on researchers
++ Earlier studies underestimated their negative effects on participants (study bad things happening in the real world → recreate that in the lab → risky, unethical)
++ As a result, we developed stringent ethical constraints on experimentation
+- Comprised of: attraction, attitudes, peace & conflict, social influence, social cognition"
+img_22.jpg,"• Then, prove that the set of such matrices satisfy the rules we listed for vector spaces. 
+For example:
+— First rule translates to: For any two matrices M1, M2 in our set, is M1 + M2 still 
+in the set?
+— Second rule translates to: Is the zero matrix in our set?
+— Third rule translates to: For any matrix M in our set, is -M in our set too?
+so on and so forth."
+img_23.jpg,"This is a receipt to show that you applied for a Social Security card on September 23, 2022. You 
+should have your card in about 2 weeks. Any document(s) you have submitted are being 
+returned to you with this receipt.
+You can use your Social Security card for work only if you have authorization from the 
+Department of Homeland Security.
+If you do not receive your Social Security card within 2 weeks, please contact us and have this 
+receipt available. To protect your privacy, we will not disclose a Social Security number over the 
+telephone.
+The Social Security Administration is required by law to limit replacement Social Security cards to 
+three per year and ten per lifetime. Do not carry your Social Security card with you. Keep it in a
+safe location, not in your wallet.
+Need More Help?
+1. Visit www.ssa.gov for fast, simple and secure online service.
+2. Call us at 1-800-772-1213, weekdays from 8:00 am to 7:00 pm. If you are deaf or hard of 
+hearing, call TTY 1-800-325-0778. Please mention this letter when you call.
+3. You may also call your local office at 877-480-4989."
+img_24.jpg,"Effective April 26, 2013, DHS began automating the admission process. An alien lawfully admitted or paroled into the U.S. is no longer 
+required to be in possession of a preprinted Form I-94. A record of 
+admission printed from the CBP website constitutes a lawful record of admission. See 8 CFR § 1.4(d).
+
+If an employer, local, state or federal agency requests admission information, present your admission (1-94) number along with any additional 
+required documents requested by that employer or agency.
+
+Note: For security reasons, we recommend that you close your browser after you have finished retrieving your 1-94 number."
+img_25.jpg,"Problem 1. Write vector equations of the following lines.
+a. Line l1 passing through the points P = (2, 1, 5), Q = (7. - 2,4)
+b. Line l2 passing through the points P = (1, 2, 1), Q = (11,-4,-1)
+c. Line l3 passing through P = (0, 1, 2) and orthogonal to both vectors v = 
+(1,2,-1), w = (2, 0, 1).
+Problem 2. Are any of the lines in Problem 1 parallel? For each pair of lines, 
+explain why or why not.
+Problem 3. Determine whether the point (2,1,5) lies on both l1 and l2 and 
+make a conclusion about whether l1 and l2 are the same line.
+Problem 4. The following two lines intersect:
+l1(t) = (5,0,3) + t (-1, 1, 1)
+l2(t) = (1,4,7)+ t(3, 0, -3).
+Find their point of intersection."
+img_26.jpg,"Honor Code and Plagiarism
+Details about the honor code and how it relates to academic integrity can be found on the Mount Holyoke's Honor Code and Com-
+munity Responsibility webpage (here). If you have any questions, feel free to reach out to me.
+
+Plagiarism is an extremely serious breach of academic integrity. It hurts you, by depriving yourself of the opportunity to wrestle 
+with self-expression and composition. It hurts your classmates, by potentially giving you an unfair advantage. It hurts the College 
+community, by setting a bad example. And it hurts the little baby puppies, by making them sad.
+
+Should I find any clear indications of plagiarism, I will give you a failing grade and report you to the Honor Code Council. 
+Plagiarism includes, but is not limited to:, failure to attribute something to a source and passing off someone else's (a classmate's, 
+a Chegg tutor's, etc) work as your own. If, being the scrupulous sort, you are in doubt whether a particular part of a paper is potentially 
+an instance of plagiarism, please ask me, and I'll tell you. I want you all to do well, but not at the expense of honesty.
+
+Student Hardship and Deadline-Related Matters
+Life as a student can be hard. I get that. I was an undergrad too, in ye olden times. And it can be especially hard in the middle of 
+a pandemic. If you're experiencing some hardship (mental, physical, or otherwise) that's not strictly disability-related but 
+is still affecting your ability to come to class, complete assignments, etc., please reach out to me. I am sure we can come to 
+some understanding."
+img_27.jpg,"Problem 3. Sketch the following regions and express them using inequalities involving r and θ. 
+Assume all circles are centered at the origin.
+a. The region in the first quadrant enclosed by a quarter circle of radius 3.
+b. The region in the third and fourth quadrants enclosed by a half circle of radius 2.
+c. The region in the first and fourth quadrants enclosed by a half circle of radius 1.
+d. The annulus inside a circle of radius 5 and outside a circle of radius 2.
+e. The quarter annulus in the second quadrant inside a circle of radius 2 and outside a circle of 
+radius 1. 
+f. The quarter annulus in the top half of the xy-plane between the lines y = ±x and inside the 
+circle of radius 2 and outside the circle of radius 1."
+img_28.jpg,"One of the greatest works of American 
+literature...a timeless evocation of the allure, 
+corruption and carelessness of wealth'
+The Times
+Jay Gatsby is a self-made man famed for his 
+decadent, champagne-drenched parties. Despite 
+being surrounded by Long Island's bright and 
+beautiful, he longs only for Daisy Buchanan. In 
+shimmering prose, Fitzgerald shows Gatsby 
+pursue his dream to its tragic conclusion.
+'A stunning illumination of the world...not only 
+a miracle of talent but a triumph of technique' 
+Richard Yates"
+img_29.jpg,"thought of Gatsby's wonder when he first picked out the 
+green light at the end of Daisy's dock. He had come a long 
+way to this blue lawn, and his dream must have seemed so 
+close that he could hardly fail to grasp it. He did not know 
+that it was already behind him, somewhere back in that vast 
+obscurity beyond the city, where the dark fields of the 
+republic rolled on under the night.
+Gatsby believed in the green light, the orgiastic future that 
+year by year recedes before us. It eluded us then, but that's no 
+matter to-morrow we will run faster, stretch out our arms 
+farther. ... And one fine morning—
+So we beat on, boats against the current, borne back
+ceaselessly into the past."
+img_30.jpg,"to achieve omnidirectional motion, including spinning in place or translating
+in any direction. Many mobile bases, however, such as cars and differential-
+drive robots, use more typical wheels, which do not slip sideways. These no-slip
+constraints are fundamentally different from the loop-closure constraints found
+in closed chains; the latter are holonomic, meaning that they are configuration
+constraints, while the former are nonholonomic, meaning that the velocity
+constraints cannot be integrated to become equivalent configuration constraints.
+Because of the different properties of omnidirectional mobile robots ver-
+sus nonholonomic mobile robots, we consider their kinematic modeling, motion
+planning, and control separately. In particular, the motion planning and con-
+trol of nonholonomic mobile robots is more challenging than for omnidirectional
+mobile robots.
+Once we have derived their kinematic models, we show that the odometry
+problem – the estimation of the chassis configuration based on wheel encoder
+data – can be solved in the same way for both types of mobile robots. Similarly,
+for mobile manipulators consisting of a wheeled base and a robot arm, we show
+that feedback control for mobile manipulation (controlling the motion of the
+end-effector using the arm joints and wheels) is the same for both types of
+mobile robots. The fundamental object in mobile manipulation is the Jacobian
+mapping joint rates and wheel velocities to end-effector twists.
+Each chapter concludes with a summary of important concepts from the
+chapter, and Appendix A compiles some of the most used equations into a handy
+reference. Videos supporting the book can be found at the book’s website, http:
+//modernrobotics.org. Some chapters have associated software, downloadable
+from the website. The software is meant to be neither maximally robust nor
+efficient but to be readable and to reinforce the concepts in the book. You are
+encouraged to read the software, not just use it, to cement your understanding
+of the material. Each function contains a sample usage in the comments. The
+software package may grow over time, but the core functions are documented
+in the chapters themselves."
+img_31.jpg,"Chapter 1
+Preview
+As an academic discipline, robotics is a relatively young field with highly am- 
+bitious goals, the ultimate one being the creation of machines that can behave 
+and think like humans. This attempt to create intelligent machines naturally 
+leads us first to examine ourselves – to ask, for example, why our bodies are 
+designed the way they are, how our limbs are coordinated, and how we learn and 
+perform complex tasks. The sense that the fundamental questions in robotics 
+are ultimately questions about ourselves is part of what makes robotics such a 
+fascinating and engaging endeavor.
+Our focus in this book is on mechanics, planning, and control for robot 
+mechanisms. Robot arms are one familiar example. So are wheeled vehicles, 
+as are robot arms mounted on wheeled vehicles. Basically, a mechanism is con
+structed by connecting rigid bodies, called links, together by means of joints, 
+so that relative motion between adjacent links becomes possible. Actuation of 
+the joints, typically by electric motors, then causes the robot to move and exert 
+forces in desired ways.
+The links of a robot mechanism can be arranged in serial fashion, like the 
+familiar open-chain arm shown in Figure 1.1(a). Robot mechanisms can also 
+have links that form closed loops, such as the Stewart–Gough platform shown 
+in Figure 1.1(b). In the case of an open chain, all the joints are actuated, while 
+in the case of mechanisms with closed loops, only a subset of the joints may be 
+actuated.
+Let us examine more closely the current technology behind robot mecha-
+nisms. The links are moved by actuators, which typically are electrically driven 
+(e.g., by DC or AC motors, stepper motors, or shape memory alloys) but can 
+also be driven by pneumatic or hydraulic cylinders. In the case of rotating"
+img_32.jpg,"electric motors, these would ideally be lightweight, operate at relatively low ro
+tational speeds (e.g., in the range of hundreds of RPM), and be able to generate 
+large forces and torques. Since most currently available motors operate at low 
+torques and at up to thousands of RPM, speed reduction and torque ampli
+fication are required. Examples of such transmissions or transformers include 
+gears, cable drives, belts and pulleys, and chains and sprockets. These speed
+reduction devices should have zero or low slippage and backlash (defined as 
+the amount of rotation available at the output of the speed-reduction device 
+without motion at the input). Brakes may also be attached to stop the robot 
+quickly or to maintain a stationary posture.
+Robots are also equipped with sensors to measure the motion at the joints. 
+For both revolute and prismatic joints, encoders, potentiometers, or resolvers 
+measure the displacement and sometimes tachometers are used to measure ve
+locity. Forces and torques at the joints or at the end-effector of the robot can be 
+measured using various types of force–torque sensors. Additional sensors may 
+be used to help localize objects or the robot itself, such as vision-only cameras, 
+RGB-D cameras which measure the color (RGB) and depth (D) to each pixel, 
+laser range finders, and various types of acoustic sensor.
+The study of robotics often includes artificial intelligence and computer per-
+ception, but an essential feature of any robot is that it moves in the physical"
+img_33.jpg,"world. Therefore, this book, which is intended to support a first course in 
+robotics for undergraduates and graduate students, focuses on mechanics, mo
+tion planning, and control of robot mechanisms.
+In the rest of this chapter we provide a preview of the rest of the book.
+Chapter 2: Configuration Space
+As mentioned above, at its most basic level a robot consists of rigid bodies 
+connected by joints, with the joints driven by actuators. In practice the links 
+may not be completely rigid, and the joints may be affected by factors such as 
+elasticity, backlash, friction, and hysteresis. In this book we ignore these effects 
+for the most part and assume that all links are rigid.
+With this assumption, Chapter 2 focuses on representing the configuration 
+of a robot system, which is a specification of the position of every point of the 
+robot. Since the robot consists of a collection of rigid bodies connected by 
+joints, our study begins with understanding the configuration of a rigid body. 
+We see that the configuration of a rigid body in the plane can be described 
+using three variables (two for the position and one for the orientation) and the 
+configuration of a rigid body in space can be described using six variables (three 
+for the position and three for the orientation). The number of variables is the 
+number of degrees of freedom (dof) of the rigid body. It is also the dimension 
+of the configuration space, the space of all configurations of the body.
+The dof of a robot, and hence the dimension of its configuration space, is 
+the sum of the dof of its rigid bodies minus the number of constraints on the 
+motion of those rigid bodies provided by the joints. For example, the two most 
+popular joints, revolute (rotational) and prismatic (translational) joints, allow 
+only one motion freedom between the two bodies they connect. Therefore a 
+revolute or prismatic joint can be thought of as providing five constraints on 
+the motion of one spatial rigid body relative to another. Knowing the dof of 
+a rigid body and the number of constraints provided by joints, we can derive 
+Grubler’s formula for calculating the dof of general robot mechanisms. For 
+open-chain robots such as the industrial manipulator of Figure 1.1(a), each 
+joint is independently actuated and the dof is simply the sum of the freedoms 
+provided by each joint. For closed chains like the Stewart–Gough platform in 
+Figure 1.1(b), Grubler’s formula is a convenient way to calculate the dof. 
+Unlike open-chain robots, some joints of closed chains are not actuated.
+Apart from calculating the dof, other configuration space concepts of interest 
+include the topology (or “shape”) of the configuration space and its repre-
+sentation. Two configuration spaces of the same dimension may have different 
+shapes, just like a two-dimensional plane has a different shape from the two-"
+img_34.jpg,"dimensional surface of a sphere. These differences become important when de-
+termining how to represent the space. The surface of a unit sphere, for example, 
+could be represented using a minimal number of coordinates, such as latitude 
+and longitude, or it could be represented by three numbers (x, y, z) subject to 
+the constraint x 2 + y 2 + z 2 = 1. The former is an explicit parametrization 
+of the space and the latter is an implicit parametrization of the space. Each 
+type of representation has its advantages, but in this book we will use implicit 
+representations of configurations of rigid bodies.
+A robot arm is typically equipped with a hand or gripper, more generally 
+called an end-effector, which interacts with objects in the surrounding world. 
+To accomplish a task such as picking up an object, we are concerned with the 
+configuration of a reference frame rigidly attached to the end-effector, and not 
+necessarily the configuration of the entire arm. We call the space of positions 
+and orientations of the end-effector frame the task space and note that there 
+is not a one-to-one mapping between the robot’s configuration space and the 
+task space. The workspace is defined to be the subset of the task space that 
+the end-effector frame can reach.
+Chapter 3: Rigid-Body Motions
+This chapter addresses the problem of how to describe mathematically the mo-
+tion of a rigid body moving in three-dimensional physical space. One convenient 
+way is to attach a reference frame to the rigid body and to develop a way to 
+quantitatively describe the frame’s position and orientation as it moves. As a 
+first step, we introduce a 3 × 3 matrix representation for describing a frame’s 
+orientation; such a matrix is referred to as a rotation matrix.
+A rotation matrix is parametrized by three independent coordinates. The 
+most natural and intuitive way to visualize a rotation matrix is in terms of its 
+exponential coordinate representation. That is, given a rotation matrix R, 
+there exists some unit vector ˆω ∈ R 3 and angle θ ∈ [0, π] such that the rota-
+tion matrix can be obtained by rotating the identity frame (that is, the frame 
+corresponding to the identity matrix) about ˆω by θ. The exponential coordi-
+nates are defined as ω = ˆωθ ∈ R 3 , which is a three-parameter representation. 
+There are several other well-known coordinate representations, e.g., Euler an
+gles, Cayley–Rodrigues parameters, and unit quaternions, which are discussed 
+in Appendix B.
+Another reason for focusing on the exponential description of rotations is 
+that they lead directly to the exponential description of rigid-body motions. 
+The latter can be viewed as a modern geometric interpretation of classical screw 
+theory. Keeping the classical terminology as much as possible, we cover in detail"
+img_35.jpg,"the linear algebraic constructs of screw theory, including the unified description 
+of linear and angular velocities as six-dimensional twists (also known as spa-
+tial velocities), and an analogous description of three-dimensional forces and 
+moments as six-dimensional wrenches (also known as spatial forces).
+Chapter 4: Forward Kinematics
+For an open chain, the position and orientation of the end-effector are uniquely 
+determined from the joint positions. The forward kinematics problem is to 
+find the position and orientation of the reference frame attached to the end-
+effector given the set of joint positions. In this chapter we present the product 
+of exponentials (PoE) formula describing the forward kinematics of open 
+chains. As the name implies, the PoE formula is directly derived from the expo-
+nential coordinate representation for rigid-body motions. Aside from providing 
+an intuitive and easily visualizable interpretation of the exponential coordinates 
+as the twists of the joint axes, the PoE formula offers other advantages, like 
+eliminating the need for link frames (only the base frame and end-effector frame 
+are required, and these can be chosen arbitrarily).
+In Appendix C we also present the Denavit–Hartenberg (D–H) representa-
+tion for forward kinematics. The D–H representation uses fewer parameters but 
+requires that reference frames be attached to each link following special rules of 
+assignment, which can be cumbersome. Details of the transformation from the 
+D–H to the PoE representation are also provided in Appendix C.
+Chapter 5: Velocity Kinematics and Statics
+Velocity kinematics refers to the relationship between the joint linear and an-
+gular velocities and those of the end-effector frame. Central to velocity kine-
+matics is the Jacobian of the forward kinematics. By multiplying the vector 
+of joint-velocity rates by this configuration-dependent matrix, the twist of the 
+end-effector frame can be obtained for any given robot configuration. Kine-
+matic singularities, which are configurations in which the end-effector frame 
+loses the ability to move or rotate in one or more directions, correspond to those 
+configurations at which the Jacobian matrix fails to have maximal rank. The 
+manipulability ellipsoid, whose shape indicates the ease with which the robot 
+can move in various directions, is also derived from the Jacobian.
+Finally, the Jacobian is also central to static force analysis. In static equilib-
+rium settings, the Jacobian is used to determine what forces and torques need to 
+be exerted at the joints in order for the end-effector to apply a desired wrench."
+img_36.jpg,"The definition of the Jacobian depends on the representation of the end-
+effector velocity, and our preferred representation of the end-effector velocity
+is as a six-dimensional twist. We touch briefly on other representations of the
+end-effector velocity and their corresponding Jacobians.
+Chapter 6: Inverse Kinematics
+The inverse kinematics problem is to determine the set of joint positions
+that achieves a desired end-effector configuration. For open-chain robots, the
+inverse kinematics is in general more involved than the forward kinematics: for
+a given set of joint positions there usually exists a unique end-effector position
+and orientation but, for a particular end-effector position and orientation, there
+may exist multiple solutions to the joint positions, or no solution at all.
+In this chapter we first examine a popular class of six-dof open-chain struc-
+tures whose inverse kinematics admits a closed-form analytic solution. Itera-
+tive numerical algorithms are then derived for solving the inverse kinematics
+of general open chains by taking advantage of the inverse of the Jacobian. If
+the open-chain robot is kinematically redundant, meaning that it has more
+joints than the dimension of the task space, then we use the pseudoinverse of
+the Jacobian.
+Chapter 7: Kinematics of Closed Chains
+While open chains have unique forward kinematics solutions, closed chains of-
+ten have multiple forward kinematics solutions, and sometimes even multiple
+solutions for the inverse kinematics as well. Also, because closed chains possess
+both actuated and passive joints, the kinematic singularity analysis of closed
+chains presents subtleties not encountered in open chains. In this chapter we
+study the basic concepts and tools for the kinematic analysis of closed chains.
+We begin with a detailed case study of mechanisms such as the planar five-bar
+linkage and the Stewart–Gough platform. These results are then generalized
+into a systematic methodology for the kinematic analysis of more general closed
+chains.
+Chapter 8: Dynamics of Open Chains
+Dynamics is the study of motion taking into account the forces and torques
+that cause it. In this chapter we study the dynamics of open-chain robots. In
+analogy to the notions of a robot’s forward and inverse kinematics, the forward
+dynamics problem is to determine the resulting joint accelerations for a given
+set of joint forces and torques. The inverse dynamics problem is to determine"
+img_37.jpg,"the input joint torques and forces needed for desired joint accelerations. The
+dynamic equations relating the forces and torques to the motion of the robot’s
+links are given by a set of second-order ordinary differential equations.
+The dynamics for an open-chain robot can be derived using one of two ap-
+proaches. In the Lagrangian approach, first a set of coordinates – referred to
+as generalized coordinates in the classical dynamics literature – is chosen to
+parametrize the configuration space. The sum of the potential and kinetic
+energies of the robot’s links are then expressed in terms of the generalized
+coordinates and their time derivatives. These are then substituted into the
+Euler–Lagrange equations, which then lead to a set of second-order differ-
+ential equations for the dynamics, expressed in the chosen coordinates for the
+configuration space.
+The Newton–Euler approach builds on the generalization of f = ma, i.e.,
+the equations governing the acceleration of a rigid body given the wrench acting
+on it. Given the joint variables and their time derivatives, the Newton–Euler
+approach to inverse dynamics is: to propagate the link velocities and accelera-
+tions outward from the proximal link to the distal link, in order to determine
+the velocity and acceleration of each link; to use the equations of motion for
+a rigid body to calculate the wrench (and therefore the joint force or torque)
+that must be acting on the outermost link; and to proceed along the links back
+toward the base of the robot, calculating the joint forces or torques needed to
+create the motion of each link and to support the wrench transmitted to the dis-
+tal links. Because of the open-chain structure, the dynamics can be formulated
+recursively.
+In this chapter we examine both approaches to deriving a robot’s dynamic
+equations. Recursive algorithms for both the forward and inverse dynamics, as
+well as analytical formulations of the dynamic equations, are presented.
+Chapter 9: Trajectory Generation
+What sets a robot apart from an automated machine is that it should be easily
+reprogrammable for different tasks. Different tasks require different motions,
+and it would be unreasonable to expect the user to specify the entire time-
+history of each joint for every task; clearly it would be desirable for the robot’s
+control computer to “fill in the details” from a small set of task input data.
+This chapter is concerned with the automatic generation of joint trajectories
+from this set of task input data. Formally, a trajectory consists of a path, which
+is a purely geometric description of the sequence of configurations achieved by
+a robot, and a time scaling, which specifies the times at which those configu-
+rations are reached."
+img_38.jpg,"Often the input task data is given in the form of an ordered set of joint values,
+called control points, together with a corresponding set of control times. On the
+basis of this data the trajectory generation algorithm produces a trajectory for
+each joint which satisfies various user-supplied conditions. In this chapter we
+focus on three cases: (i) point-to-point straight-line trajectories in both joint
+space and task space; (ii) smooth trajectories passing through a sequence of
+timed “via points”; and (iii) time-optimal trajectories along specified paths, 
+subject to the robot’s dynamics and actuator limits. Finding paths that avoid
+collisions is the subject of the next chapter on motion planning.
+Chapter 10: Motion Planning
+This chapter addresses the problem of finding a collision-free motion for a robot
+through a cluttered workspace, while avoiding joint limits, actuator limits, and
+other physical constraints imposed on the robot. The path planning problem
+is a subproblem of the general motion planning problem that is concerned with
+finding a collision-free path between a start and goal configuration, usually
+without regard to the dynamics, the duration of the motion, or other constraints
+on the motion or control inputs.
+There is no single planner applicable to all motion planning problems. In
+this chapter we consider three basic approaches: grid-based methods, sampling
+methods, and methods based on virtual potential fields.
+Chapter 11: Robot Control
+A robot arm can exhibit a number of different behaviors depending on the task
+and its environment. It can act as a source of programmed motions for tasks
+such as moving an object from one place to another, or tracing a trajectory for
+manufacturing applications. It can act as a source of forces, for example when
+grinding or polishing a workpiece. In tasks such as writing on a chalkboard, it
+must control forces in some directions (the force pressing the chalk against the
+board) and motions in other directions (the motion in the plane of the board).
+In certain applications, e.g., haptic displays, we may want the robot to act like
+a programmable spring, damper, or mass, by controlling its position, velocity,
+or acceleration in response to forces applied to it.
+In each of these cases, it is the job of the robot controller to convert the
+task specification to forces and torques at the actuators. Control strategies to
+achieve the behaviors described above are known as motion (or position) con-
+trol, force control, hybrid motion–force control, and impedance con-
+trol. Which of these behaviors is appropriate depends on both the task and"
+img_39.jpg,"the environment. For example, a force-control goal makes sense when the end-
+effector is in contact with something, but not when it is moving in free space.
+We also have a fundamental constraint imposed by the mechanics, irrespective
+of the environment: the robot cannot independently control both motions and
+forces in the same direction. If the robot imposes a motion then the environment
+determines the force, and vice versa.
+Most robots are driven by actuators that apply a force or torque to each
+joint. Hence, precisely controlling a robot requires an understanding of the
+relationship between the joint forces and torques and the motion of the robot;
+this is the domain of dynamics. Even for simple robots, however, the dynamic
+equations are complex and dependent on a precise knowledge of the mass and
+inertia of each link, which may not be readily available. Even if it were, the
+dynamic equations would still not reflect physical phenomena such as friction,
+elasticity, backlash, and hysteresis.
+Most practical control schemes compensate for these uncertainties by using
+feedback control. After examining the performance limits of feedback control
+without a dynamic model of the robot, we study motion control algorithms,
+such as computed torque control, that combine approximate dynamic mod-
+eling with feedback control. The basic lessons learned for robot motion control
+are then applied to force control, hybrid motion–force control, and impedance
+control.
+Chapter 12: Grasping and Manipulation
+The focus of earlier chapters is on characterizing, planning, and controlling the
+motion of the robot itself. To do useful work, the robot must be capable of
+manipulating objects in its environment. In this chapter we model the con-
+tact between the robot and an object, specifically the constraints on the object
+motion imposed by a contact and the forces that can be transmitted through a
+frictional contact. With these models we study the problem of choosing contacts
+to immobilize an object by form closure and force closure grasping. We also
+apply contact modeling to manipulation problems other than grasping, such as
+pushing an object, carrying an object dynamically, and testing the stability of
+a structure.
+Chapter 13: Wheeled Mobile Robots
+The final chapter addresses the kinematics, motion planning, and control of
+wheeled mobile robots and of wheeled mobile robots equipped with robot arms.
+A mobile robot can use specially designed omniwheels or mecanum wheels"
+img_40.jpg,"Berkeley, Of the Principles of Human Knowledge 309
+objects from their being perceived, so as to conceive them existing un-
+perceived? Light and colours, heat and cold, extension and figures, in a
+word the things we see and feel, what are they but so many sensations,
+notions, ideas or impressions on the sense; and is it possible to separate,
+even in thought, any of these from perception? For my part I might as
+easily divide a thing from itself. I may indeed divide in my thoughts or
+conceive apart from each other these things which, perhaps, I never
+perceived by sense so divided. Thus I imagine the trunk of a human body
+without the limbs, or conceive the smell of rose without thinking on the
+rose itself. So far I will not deny I can abstract, if that may properly be
+called abstraction, which extends only to the conceiving separately such
+objects, as it is possible may really exist or be actually perceived asunder.
+But my conceiving or imagining power does not extend beyond the
+possibility of real existence or perception. Hence as it is impossible for me
+to see or feel anything without an actual sensation of that thing, so is it
+impossible for me to conceive in my thoughts any sensible thing or object
+distinct from the sensation or perception of it.
+6. Some truths there are so near and obvious to the mind, that a man
+need only open his eyes to see them. Such I take this important one to be, to
+wit, that all the choir of heaven and furniture of the earth, in a word all
+those bodies which compose the mighty frame of the world, have not any
+subsistence without a mind, that their being is to be perceived or known;
+that consequently so long as they are not actually perceived by me, or do
+not exist in my mind or that of any other created spirit, they must either
+have no existence at all, or else subsist in the mind of some eternal spir-
+it: it being perfectly unintelligible and involving all the absurdity of
+abstraction, to attribute to any single part of them an existence indepen-
+dent of a spirit. To be convinced of which, the reader need only reflect and
+try to separate in his own thoughts the being of a sensible thing from its
+being perceived.
+7. From what has been said, it follows, there is not any other substance
+than spirit, or that which perceives. But for the fuller proof of this point, let
+it be considered, the sensible qualities are colour, figure, motion, smell,
+taste, and such like, that is, the ideas perceived by sense. Now for an idea to
+exist in an unperceiving thing, is a manifest contradiction; for to have an
+idea is all one as to perceive: that therefore wherein colour, figure, and the"
